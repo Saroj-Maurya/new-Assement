@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparison</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Comparison</h1>
-    <script>
-        //question 1
-        var alice = [];
-        var bob = [];
-        if(alice > bob){
-            console.log("Alice score first" + alice);
-        }
-        if(alice == bob){
-            console.log("Both have same points");
-        }
-        if(bob > alice){
-            console.log("Bob score first" + bob);
-        }
-        
-        // question 2
-        var star = "";
-        for(int i; i<=3; i++){
-            star += "*";
-            console.log(star);
-        }
-    </script>
+    <form action="display" class="signup">
+        <h1>Sign up</h1>
+        <i class="fa-solid fa-user-secret"></i>
+        <i class="fa-solid fa-browser"></i>
+        <i class="fa-solid fa-shield"></i>
+        <div class="username">
+            <h4>User Name</h4>
+            <h6>Username is your online identity</h6>
+            <ul>
+                <li>Your username should only contain letters,numbers, underscores or hyphens.</li>
+                <li>No spaces or special characters allowed</li>
+                <li>Your username should not be offensive or contain profanity.</li>
+            </ul>
+            <div class="content">
+                <input type="text" placeholder="Enter username">
+                <input type="text" placeholder="FirstName">
+                <input type="text" placeholder="LastName">
+            </div>
+            <button class="next">Next</button>
+        </div>
+
+    </form>
+    
+    
 </body>
 </html>
